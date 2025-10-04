@@ -1,11 +1,18 @@
-print("hello world")
-stars = "helllo world"
-print(stars)
-num = 2 * 2
-print(num)
-print("lol"*5)
-print("**"*3)
+import random
 
-items = ["pizza", "burger", "sandwich", "pepsi", "cocaloca"]
 
-print(f"here is the list of items: {items}")
+random_num = random.randint(1,100)
+
+list_num = []
+
+for i in range(10):
+  list_num.append(random.randint(1,100))
+
+print(list_num)
+
+highest_num = 0
+for num in list_num:
+  if num > highest_num:
+    highest_num = num
+
+print("The highest number is:", highest_num)
